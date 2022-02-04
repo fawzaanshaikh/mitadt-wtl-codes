@@ -1,0 +1,109 @@
+<!-- Design a form for Company registration which includes all elements of form tags. -->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Company Registration Form</title>
+
+        <style>
+            * {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                position: relative;
+                top: 40px;
+                height: 840px;
+                background-image: linear-gradient(cyan, white);
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            .div-form {
+                position: relative;
+                top: 30px;
+                height: fit-content;
+                width: 500px;
+                margin: auto;
+                padding: 30px;
+                border: 2px rgb(190, 190, 190) solid;
+                border-radius: 10%;
+                background-color: aliceblue;
+            }
+
+            .employee-details-textbox {
+                position: relative;
+                left: 20px;
+            }
+
+            #employee-id {
+                position: relative;
+                left: 43px;
+            }
+
+            #submit-button {
+                position: relative;
+                left: 44%;
+                height: 40px;
+                width: 80px;
+                border: 1px blue solid;
+                border-radius: 7px;
+                font-weight: bold;
+                font-size: 17px;
+                color: rgb(253, 254, 255);
+                background-color: rgb(162, 162, 255);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id = "main-heading" style = "text-align: center;">Company Registration Form</h1>
+
+        <div class = "div-form">
+            <form action = "#" method = "">
+                <label for = "employee-name">Enter employee name: </label>
+                <input class = "employee-details-textbox" id = "employee-name" name = "employee-name" type = "text" placeholder = " Enter name"/>
+                <br><br>
+                <label for = "employee-id">Enter employee ID: </label>
+                <input class = "employee-details-textbox" id = "employee-id" name = "employee-id" type = "text" placeholder = " Enter ID"/>
+                <br><br>
+
+                <label for = "tech-stack">Choose your tech stack: </label>
+                <br>
+                <input class = "tech-stack-checkbox" id = "tech-stack1" name = "tech-stack" type = "checkbox" value = "html-css-js"> HTML, CSS and JS<br>
+                <input class = "tech-stack-checkbox" id = "tech-stack2" name = "tech-stack" type = "checkbox" value = "java-mysql"> Java and MySQL<br>
+                <input class = "tech-stack-checkbox" id = "tech-stack3" name = "tech-stack" type = "checkbox" value = "python-django"> Python and Django<br>
+                <input class = "tech-stack-checkbox" id = "tech-stack4" name = "tech-stack" type = "checkbox" value = "ruby"> Ruby
+                <br><br>
+
+                <label for = "gender">Gender: </label><br>
+                <input class = "gender-radiobutton" id = "gender-male" name = "gender" type = "radio" value = "male"> Male
+                <input class = "gender-radiobutton" id = "gender-female" name = "gender" type = "radio" value = "female"> Female
+                <input class = "gender-radiobutton" id = "gender-other" name = "gender" type = "radio" value = "other"> Other
+                <br><br>
+
+                <label for = "department">Select department: &nbsp;&nbsp;</label>
+                <select name = "department" id = "department">
+                    <option value = "web-development">Web Development</option>
+                    <option value = "devops">DevOps</option>
+                    <option value = "projct-management">Project Management</option>
+                    <option value = "crm">CRM</option>
+                </select>
+                <br><br>
+
+                <label for = "suggestions">Any queries, suggestions or feedback: </label><br>
+                <textarea name = "suggestions" id = "suggestions-textarea" cols = "50" rows = "10" placeholder = " Queries, suggestions or feedback"></textarea>
+                <br><br>
+
+                <button id = "submit-button" value = "submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
