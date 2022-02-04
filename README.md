@@ -1,1 +1,1 @@
-# Web Programs Repository for Assignments Done in Web Technologies Laboratory in MIT ADT University
+# Web Programs Repository for Assignments Done in Web Technologies Laboratory at MIT ADT University
