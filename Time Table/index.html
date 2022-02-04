@@ -11,30 +11,70 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        .div-table {
+            height: fit-content;
+            width: fit-content;
+            margin: auto;
+        }
+
         table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
+            text-align: center;
         }
 
         th {
             padding: 5px 10px;
         }
+
+        .color-yellow {
+            background-color: yellow;
+        }
+
+        .color-green {
+            background-color: lime;
+        }
+
+        .lunch-break {
+            position: absolute;
+            top: 250px;
+            left: 980px;
+            writing-mode: tb-rl;
+            transform: rotate(-180deg);
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <h1 class = "main-heading">TY IS 3 Time Table</h1>
+    <h1 class = "main-heading" style = "text-align: center;">TY IS 3 Time Table</h1>
 
     <div class="div-table">
         <table>
             <tr>
-                <th>Time &#8594;</th><th>09.10 - 09.55</th> <th>10.00 - 10.45</th> <th>10.50 - 11.35</th> <th>11.40 - 12.25</th> <th>12.55 - 01.40</th> <th>01.45 - 02.30</th>
+                <th>Time &#8594;</th><th>09.10 - 09.55</th> <th>10.00 - 10.45</th> <th>10.50 - 11.35</th> <th>11.40 - 12.25</th> <th rowspan = "2">12.25 - <br>12.55</th> <th>12.55 - 01.40</th> <th>01.45 - 02.30</th>
             </tr>
             <tr>
-                <th>Day &#8595;</th><td colspan = "4" style = "text-align: center;">Class Room: Online Mode</td><td colspan = "2" style = "text-align: center;">Class Room: Online Mode</td>
+                <th>Day &#8595;</th><th colspan = "4">Class Room: Online Mode</th><th colspan = "2">Class Room: Online Mode</th>
             </tr>
             <tr>
-                
+                <td>Monday</td><td colspan = "2">A : WTL : SAD<br>B : MLCL : NNJ</td><td>DAA : RSN :</td><td>ML : NNJ</td><td rowspan = "6"></td><td>OR : PG</td><td>PCD : VV :</td>
             </tr>
+            <tr>
+                <td>Tuesday</td><td class = "color-yellow">SCIL</td><td class = "color-yellow">SCIL</td><td class = "color-yellow">SCIL</td><td>EL I : OT/SSP/K</td><td colspan = "2">A : MLCL : NNJ<br>B : MP IV : HD</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td><td colspan = "2">A : MP IV : VV<br>B : WTL : SAD</td><td>ML : NNJ</td><td>EL I : OT/SSP/K</td><td>DAA : RSN :</td><td>OR : PG</td>
+            </tr>
+            <tr>
+                <td>Thursday</td><td>OR : PG</td><td>PCD : VV :</td><td colspan = "2">A : WTL : SAD<br>B : MLCL : NBS</td><td class = "color-green">SHD</td><td class = "color-green">SHD</td>
+            </tr>
+            <tr>
+                <td>Friday</td><td colspan = "2">A : MLCL : NBS<br>B : WTL : SAD</td><td>DAA : RSN :</td><td>PCD : VV :</td><td>ML : NNJ</td><td>EL I : OT/SSP/K</td>                
+            </tr>
+            <tr style = "height: 50px;">
+                <td>Saturday</td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <span class = "lunch-break">Lunch Break</span>
         </table>
     </div>
 </body>
