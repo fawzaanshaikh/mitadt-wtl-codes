@@ -5,10 +5,38 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coffee Shop</title>
+    
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            header {
+                height: 50vh;
+                background-image: linear-gradient(rgb(125, 22, 22), rgb(240, 172, 172));
+            }
+
+            .white-patch {
+                height: 20vh;
+                background-image: linear-gradient(rgb(240, 172, 172), white);
+            }
+
+            #navbar {
+                height: 10vh;
+                width: 100%;
+                background-color: black;
+                position: fixed;
+            }
+        </style>
     </head>
 
     <body>
-        <h1 class="main-header">Welcome to the Coffee Shop</h1>
-            
+        <header>
+            <nav id="navbar"></nav>
+        </header>
+        <div class="white-patch"></div>
+        
     </body>
 </html>
