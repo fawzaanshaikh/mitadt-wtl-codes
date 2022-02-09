@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: left;
+            }
+
+            th, td {
+                padding: 10px 30px;
+            }
+
+            .grey {
+                background-color: rgb(214, 214, 214);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <table>
+            <caption>Table 1</caption>
+            <tr>
+                <th colspan="2" class = "grey">65</th><th colspan="2" class = "grey">40</th><th colspan="2" class = "grey">20</th>
+            </tr>
+            <tr>
+                <th class = "grey">Men</th><th class = "grey">Women</th><th class = "grey">Men</th><th class = "grey">Women</th><th class = "grey">Men</th><th class = "grey">Women</th>
+            </tr>
+            <tr>
+                <td>81</td><td>84</td><td>93</td><td>80</td><td>82</td><td>91</td>
+            </tr>
+        </table>
+
+        <br><br><br>
+
+        <table>
+            <caption>Table 2</caption>
+            <tr>
+                <th class = "grey"></th><th class = "grey"></th><th class = "grey">Bob</th><th class = "grey">Alice</th>
+            </tr>
+            <tr>
+                <th rowspan="2" class = "grey">Favorite</th><th class = "grey">Color</th><td>Blue</td><td>Purple</td>
+            </tr>
+            <tr>
+                <th class = "grey">Flavor</th><td>Banana</td><td>Chocolate</td>
+            </tr>
+            <tr>
+                <th rowspan="2" class = "grey">Least Favorite</th><th class = "grey">Color</th><td>Yellow</td><td>Pink</td>
+            </tr>
+            <tr>
+                <th class = "grey">Flavor</th><td>Mint</td><td>Walnut</td>
+            </tr>
+        </table>
+    </body>
+</html>
