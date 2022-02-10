@@ -11,18 +11,20 @@
                 margin: 0;
                 padding: 0;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-image: linear-gradient(rgb(240, 172, 172), white);
             }
 
             header {
-                height: 50vh;
-                background-image: linear-gradient(rgb(185, 65, 65), rgb(240, 172, 172));
+                position: relative;
+                top: -36px;
+                height: 850px;
+                background-image: linear-gradient(rgb(185, 65, 65), rgb(255, 92, 92));
             }
 
-            .white-patch {
-                /* height: 20vh; */
-                height: 1000px;
+            /* .white-patch {
+                height: 800px;
                 background-image: linear-gradient(rgb(240, 172, 172), white);
-            }
+            } */
 
             .navbar {
                 position: fixed;
@@ -32,9 +34,6 @@
             }
             
             .navbar-opaque {
-                /* position: fixed;
-                height: 10vh;
-                width: 100%; */
                 background-color: rgb(212, 85, 85);
                 z-index: 3;
             }
@@ -58,6 +57,42 @@
             .navbar-link:hover {
                 color: orange;
             }
+
+            .main-line {
+                position: relative;
+                top: 150px;
+                text-align: center;
+                color: aliceblue;
+                font-size: 50px;
+            }
+
+            #decoration1 {
+                position: relative;
+                top: 150px;
+                text-align: center;
+                color: aliceblue;
+            }
+
+            .div-home-content {
+                position: relative;
+                top: 180px;
+                text-align: center;
+                margin-left: 100px;
+                margin-right: 100px;
+                color: aliceblue;
+                font-size: 23px;
+            }
+
+            .div-coffee-images {
+                height: fit-content;
+                width: fit-content;
+                margin: auto;
+                margin-top: 250px;
+            }
+
+            .coffee-images {
+                margin: 0px 50px;
+            }
             </style>
     </head>
 
@@ -72,8 +107,20 @@
                     <li class="inline-li"><a href="" class="navbar-link">Contact Us</a></li>
                 </ul>
             </nav>
+
+            <h1 class="main-line">Welcome to the Coffee Shop!</h1>
+            <div id="decoration1">----------------- x -----------------</div>
+
+            <div class="div-home-content">
+                <p class="home-content">We provide all types of coffees from Lattes to Espressos. We believe that both, quality and quantity matter, and so, you will find your servings to be large, and the taste upon your tastebuds to be far greater.</p>
+            </div>
+
+            <div class="div-coffee-images">
+                <img class="coffee-images" id="img1" src="./fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" alt="Coffee with a spoon on the side" height="330" width="430">
+                <img class="coffee-images" id="img2" src="./nathan-dumlao-6VhPY27jdps-unsplash.jpg" alt="Three people holding coffee cups" height="330" width="430">
+                <img class="coffee-images" id="img3" src="./nathan-dumlao-KixfBEdyp64-unsplash.jpg" alt="Coffee grinders side by side" height="330" width="430">
+            </div>
         </header>
-        <div class="white-patch"></div>
         
     </body>
 
