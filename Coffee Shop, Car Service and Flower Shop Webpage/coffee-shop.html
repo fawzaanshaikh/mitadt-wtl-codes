@@ -28,7 +28,7 @@
 
             .navbar {
                 position: fixed;
-                height: 15vh;
+                height: 70px;
                 width: 100%;
                 background-color: rgba(185, 65, 65, 0);
             }
@@ -114,6 +114,43 @@
                 margin: 0px 50px;
                 font-size: large;
             }
+
+            #special {
+                height: 500px;
+                width: 100%;
+                margin-top: 100px;
+                background-color: black;
+                color: aliceblue;
+            }
+
+            .left {
+                float: left;
+            }
+
+            .special-header {
+                position: relative;
+                top: 30px;
+                left: 50px;
+                font-size: 40px;
+            }
+
+            .special-content {
+                position: relative;
+                top: 30px;
+                left: 50px;
+                margin-right: 1000px;
+                font-size: 20px;
+            }
+
+            .right {
+                float: right;
+            }
+
+            #arabica-coffee {
+                position: relative;
+                top: -310px;
+                left: -250px;
+            }
             </style>
     </head>
 
@@ -123,7 +160,7 @@
                 <ul id="navbar-list">
                     <li class="inline-li"><a href="#header" class="navbar-link">Home</a></li>
                     <li class="inline-li"><a href="#about" class="navbar-link">About</a></li>
-                    <li class="inline-li"><a href="" class="navbar-link">Today's Special</a></li>
+                    <li class="inline-li"><a href="#special" class="navbar-link">Today's Special</a></li>
                     <li class="inline-li"><a href="" class="navbar-link">Menu</a></li>
                     <li class="inline-li"><a href="" class="navbar-link">Contact Us</a></li>
                 </ul>
@@ -150,6 +187,16 @@
                 <p class="about-content">Our coffee shop is built from a small dream of a young entrepreneur. Your constant support, feedback and guidance fuels the working of our coffee shop and has helped make hundreds of lives experience a happy time even if for a few minutes. From the belief system of 'The Art of Giving', our young CEO believes in letting our dear customers experience the taste, culture and essence behind every sip of coffee they take, rather than pay attention to the amount it costs. Thus, the costs of our eatables are kept as low as possible. Located in India, this shop is a hope for a chain of shops all over the country.</p>
             </div>
         </main>
+
+        <div id="special">
+            <section class="left">
+                <h3 class="special-header">Today's Special</h3>
+                <p class="special-content">Our darkest roasted coffee, the Arabica Coffee is a blend best enjoyed black for those who like their coffee bold, like a traditional espresso with bittersweet notes. <br><br>Feast your eyes and tongue upon today's special menu and let your sate and happy mind do the talking.</p>
+            </section>
+            <aside class="right">
+                <img id="arabica-coffee" src="./arabica-coffee.jpg" alt="Arabica coffee image" height="430" width="430">
+            </aside>
+        </div>
         
     </body>
 
