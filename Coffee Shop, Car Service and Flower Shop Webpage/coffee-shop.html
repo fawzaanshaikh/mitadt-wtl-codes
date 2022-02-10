@@ -175,6 +175,38 @@
             .cell-wide {
                 padding: 20px 50px;
             }
+
+            footer {
+                margin-top: 150px;
+                height: 300px;
+                width: 100%;
+                background-color: rgb(185, 65, 65);
+                color: aliceblue;
+            }
+
+            .contact-header {
+                position: relative;
+                top: 20px;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .table-contact {
+                height: fit-content;
+                width: fit-content;
+                margin: auto;
+            }
+
+            #last-line {
+                position: relative;
+                top: -10px;
+                text-align: center;
+            }
+
+            #fawzaan-link {
+                text-decoration: none;
+                color: yellow;
+            }
             </style>
     </head>
 
@@ -186,7 +218,7 @@
                     <li class="inline-li"><a href="#about" class="navbar-link">About</a></li>
                     <li class="inline-li"><a href="#special" class="navbar-link">Today's Special</a></li>
                     <li class="inline-li"><a href="#menu" class="navbar-link">Menu</a></li>
-                    <li class="inline-li"><a href="" class="navbar-link">Contact Us</a></li>
+                    <li class="inline-li"><a href="#footer" class="navbar-link">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -246,12 +278,28 @@
             </div>
         </div>
         
+        <footer id="footer">
+            <h2 class="contact-header">Contact Us</h2>
+
+            <table class="table-contact">
+                <tr>
+                    <td class="cell-wide">Email: </td><td class="cell-wide">thecoffeeshop@domain.com</td>
+                </tr>
+                <tr>
+                    <td class="cell-wide">Mobile No.: </td><td class="cell-wide">+91 98765 43210</td>
+                </tr>
+                <tr>
+                    <td class="cell-wide">Website: </td><td class="cell-wide">www.thecoffeeshop.com</td>
+                </tr>
+            </table>
+
+            <p id="last-line">Made with &hearts; by <a id="fawzaan-link" href="https://www.github.com/fawzaanshaikh/">Fawzaan Shaikh</a></p>
+        </footer>
     </body>
 
     <script>
         var navbar = document.getElementById("navbar");
         document.addEventListener("scroll", function() {
-            console.log("SCROLLLLLEWDWDWDWD");
             navbar.classList.add("navbar-opaque");
         });
     </script>
