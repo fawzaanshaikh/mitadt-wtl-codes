@@ -151,6 +151,30 @@
                 top: -310px;
                 left: -250px;
             }
+
+            #menu {
+                width: 100%;
+                text-align: center;
+            }
+
+            .menu-header {
+                position: relative;
+                left: 15%;
+                font-size: 50px;
+            }
+
+            .table-menu {
+                position: relative;
+                left: 13%;
+                height: fit-content;
+                width: fit-content;
+                margin: auto;
+                font-size: larger;
+            }
+
+            .cell-wide {
+                padding: 20px 50px;
+            }
             </style>
     </head>
 
@@ -161,7 +185,7 @@
                     <li class="inline-li"><a href="#header" class="navbar-link">Home</a></li>
                     <li class="inline-li"><a href="#about" class="navbar-link">About</a></li>
                     <li class="inline-li"><a href="#special" class="navbar-link">Today's Special</a></li>
-                    <li class="inline-li"><a href="" class="navbar-link">Menu</a></li>
+                    <li class="inline-li"><a href="#menu" class="navbar-link">Menu</a></li>
                     <li class="inline-li"><a href="" class="navbar-link">Contact Us</a></li>
                 </ul>
             </nav>
@@ -196,6 +220,30 @@
             <aside class="right">
                 <img id="arabica-coffee" src="./arabica-coffee.jpg" alt="Arabica coffee image" height="430" width="430">
             </aside>
+        </div>
+
+        <div id="menu">
+            <h1 class="menu-header"><span class="big-tilda">~</span>Menu<span class="big-tilda">~</span></h1>
+
+            <div class="div-menu">
+                <table class="table-menu">
+                    <tr>
+                        <td class="cell-wide">Coffee</td><td class="cell-wide">100</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-wide">Tea</td><td class="cell-wide">50</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-wide">Cold Coffee</td><td class="cell-wide">120</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-wide">Arabica Coffee</td><td class="cell-wide">200</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-wide">Water Bottle</td><td class="cell-wide">10</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         
     </body>
