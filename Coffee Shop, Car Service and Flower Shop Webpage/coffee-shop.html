@@ -15,28 +15,73 @@
 
             header {
                 height: 50vh;
-                background-image: linear-gradient(rgb(125, 22, 22), rgb(240, 172, 172));
+                background-image: linear-gradient(rgb(185, 65, 65), rgb(240, 172, 172));
             }
 
             .white-patch {
-                height: 20vh;
+                /* height: 20vh; */
+                height: 1000px;
                 background-image: linear-gradient(rgb(240, 172, 172), white);
             }
 
-            #navbar {
-                height: 10vh;
-                width: 100%;
-                background-color: black;
+            .navbar {
                 position: fixed;
+                height: 15vh;
+                width: 100%;
+                background-color: rgba(185, 65, 65, 0);
             }
-        </style>
+            
+            .navbar-opaque {
+                /* position: fixed;
+                height: 10vh;
+                width: 100%; */
+                background-color: rgb(212, 85, 85);
+                z-index: 3;
+            }
+
+            #navbar-list {
+                position: relative;
+                left: 50%;
+            }
+
+            .inline-li {
+                display: inline;
+                margin-left: 50px;
+            }
+
+            .navbar-link {
+                font-size: 18px;
+                text-decoration: none;
+                color: aliceblue;
+            }
+
+            .navbar-link:hover {
+                color: orange;
+            }
+            </style>
     </head>
 
     <body>
-        <header>
-            <nav id="navbar"></nav>
+        <header id="header">
+            <nav id="navbar" class="navbar">
+                <ul id="navbar-list">
+                    <li class="inline-li"><a href="#header" class="navbar-link">Home</a></li>
+                    <li class="inline-li"><a href="" class="navbar-link">About</a></li>
+                    <li class="inline-li"><a href="" class="navbar-link">Today's Special</a></li>
+                    <li class="inline-li"><a href="" class="navbar-link">Menu</a></li>
+                    <li class="inline-li"><a href="" class="navbar-link">Contact Us</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="white-patch"></div>
         
     </body>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        document.addEventListener("scroll", function() {
+            console.log("SCROLLLLLEWDWDWDWD");
+            navbar.classList.add("navbar-opaque");
+        });
+    </script>
 </html>
