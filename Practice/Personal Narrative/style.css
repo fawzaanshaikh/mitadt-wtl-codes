@@ -9,8 +9,7 @@ body {
 } */
 
 #navbar-list {
-    position: relative;
-    left: 55%;
+    float: right;
     top: 20px;
 }
 
@@ -31,7 +30,7 @@ body {
 
 header {
     position: relative;
-    top: -20px;
+    top: -50px;
     height: 500px;
     background-color: blueviolet;
     color: aliceblue;
@@ -39,21 +38,44 @@ header {
 
 #header-main-line {
     position: relative;
-    top: 20px;
-    left: 50px;
+    top: 120px;
+    /* left: 50px; */
+    margin-left: 50px;
     font-size: 70px;
 }
 
 #quote {
-    margin-top: 70px;
+    margin-top: 150px;
     margin-left: 50px;
     font-size: 24px;
 }
 
 #main-photo {
     position: relative;
-    right: 280px;
-    top: -180px;
+    right: 180px;
+    top: -200px;
     float: right;
     border-radius: 50%;
+}
+
+#div-about-me {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.div-about-me-content {
+    width: fit-content;
+    margin: auto;
+    padding: 10px 30px;
+}
+
+.about-me-group {
+    text-align: center;
 }
