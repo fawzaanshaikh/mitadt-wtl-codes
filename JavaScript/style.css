@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#math-div {
+    margin-top: 80px;
+}
+
+#div-result-button {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+#result-button {
+    height: 40px;
+    width: 100px;
+}
