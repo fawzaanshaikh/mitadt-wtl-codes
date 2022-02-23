@@ -8,6 +8,18 @@ function showResult() {
     switch (operation) {
         case "add":
             result = (parseInt(firstNum) + parseInt(secondNum)).toString();
+            break;
+        case "subtract":
+            result = (parseInt(firstNum) - parseInt(secondNum)).toString();
+            break;
+        case "multiply":
+            result = (parseInt(firstNum) * parseInt(secondNum)).toString();
+            break;
+        case "divide":
+            result = (parseInt(firstNum) / parseInt(secondNum)).toString();
+            break;
+        default:
+            result = "not found since a wrong selection was done."
     }
 
     document.getElementById("result").innerHTML = "The answer is " + result;
