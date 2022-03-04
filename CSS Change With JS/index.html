@@ -14,14 +14,27 @@
             <p id="text">This is sample text.</p> <input type="button" onclick="changeSize()" value="Click to Change Size">
             <br><br><br>
             
-            <select name = "color" id = "color">
+            <label for="text-color">Choose the text color: </label>
+            <select name = "text-color" id = "text-color">
                 <option value = "red">Red</option>
                 <option value = "yellow">Yellow</option>
                 <option value = "blue">Blue</option>
                 <option value = "green">Green</option>
                 <option value = "white">White</option>
             </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="bg-color">Choose the background color: </label>
+            <select name = "bg-color" id = "bg-color">
+                <option value = "red">Red</option>
+                <option value = "yellow">Yellow</option>
+                <option value = "blue">Blue</option>
+                <option value = "green">Green</option>
+                <option value = "white">White</option>
+            </select>
+            <br><br>
             <input type="button" onclick="changeBgColor()" value="Click to Change Background Colour">
+            <br><br>
+            <input type="button" onclick="magic()" value="Magic">
         </main>
 
         <script src="script.js"></script>

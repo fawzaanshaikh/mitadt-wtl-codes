@@ -3,23 +3,19 @@ function changeSize() {
 }
 
 function changeBgColor() {
-    let color = document.getElementById("color").value;
+    let color = document.getElementById("bg-color").value;
+    
+    document.bgColor = color;
+}
 
-    switch (color) {
-        case "red":
-            document.bgColor = "Red";
-            break;
-        case "yellow":
-            document.bgColor = "Yellow";
-            break;
-        case "blue":
-            document.bgColor = "Blue";
-            break;
-        case "green":
-            document.bgColor = "Green";
-            break;
-        case "white":
-            document.bgColor = "White";
-            break;
+function magic() {
+    let textColor = document.getElementById("text-color").value;
+    let bgColor = document.getElementById("bg-color").value;
+
+    if (textColor != bgColor) {
+        document.getElementById("text").style.color = textColor;
+    } else {
+        document.bgColor = "white";
+        document.getElementById("text").style.color = "black";
     }
 }
