@@ -14,3 +14,8 @@ function showTable() {
     tr.appendChild(td2);
     tr.appendChild(td3);
 }
+
+function showRbText(element) {
+    let text = element.value;
+    document.getElementById("rb-output").innerHTML = text + " was selected.";
+}
