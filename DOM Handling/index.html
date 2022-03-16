@@ -37,6 +37,10 @@
             .radiobutton {
                 margin-left: 30px;
             }
+
+            #show-button {
+                margin-right: 30px;
+            }
         </style>
     </head>
 
@@ -55,6 +59,10 @@
             <input class = "radiobutton" id = "rb2" name = "rb" type = "radio" onclick="showRbText(this)" value = "Radio Button 2"> Radio Button 2
             <br><br>
             <b><p id="rb-output"></p></b>
+        </div>
+
+        <div id="div-button-show">
+            <input type="button" id="show-button" onclick="showButton()" value="Click to Show Button">
         </div>
 
         <script src="script.js"></script>
