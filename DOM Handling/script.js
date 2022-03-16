@@ -17,9 +17,18 @@ function showTable() {
 }
 
 // Function to show the radio button text
-function showRbText(element) {
-    let text = element.value;
-    document.getElementById("rb-output").innerHTML = text + " was selected.";
+// function showRbText(element) {
+//     let text = element.value;
+//     document.getElementById("rb-output").innerHTML = text + " was selected.";
+// }
+function showRbText() {
+    var radios = document.querySelectorAll(".radiobutton");
+
+    for (var i = 0, len = radios.length; i < len; i++) {
+        if (radios[i].checked) {
+            document.getElementById("rb-output").innerHTML = radios[i].value + " was selected."
+        }
+    }
 }
 
 // Global variable of button in order to listen to its event
