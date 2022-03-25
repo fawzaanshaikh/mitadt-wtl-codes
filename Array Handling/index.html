@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array Handling</title>
+        
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .container {
+                height: fit-content;
+                width: fit-content;
+                padding: 20px;
+                margin: 100px auto;
+                text-align: center;
+                border: 2px solid black;
+                border-radius: 40px;
+            }
+        </style>    
+    </head>
+
+    <body>
+        <div class="container">
+            <label for="colour-choice">Enter the colour of your choice: </label>
+            <input type="text" id="colour-choice"><br><br>
+            <input type="button" value="Check" onclick="checkColour()">
+
+            <h2 id="result"></h2>
+        </div>
+
+        <script>
+            // Global variable to store the colours
+            let colours = ["red", "yellow", "blue", "green"];
+
+            // Function to check whether the input colour exists
+            function checkColour() {
+                let colour = document.getElementById("colour-choice").value.toLowerCase();
+                let result = document.getElementById("result");
+                let colourFound = false;
+
+                colours.forEach((element) => {
+                    if (element === colour) {
+                        colourFound = true;
+                    }
+                });
+
+                if (colourFound) {
+                    result.innerHTML = "The colour " + colour + " is present.";
+                    result.style.color = colour;
+                } else {
+                    addColour(colour);
+                    result.style.color = "black";
+                    result.innerHTML = "The colour " + colour + " did not exist. Hence, it has been added into the internal array.<br>Now, the internal array is: <br>"
+                    colours.forEach((element) => {
+                        result.innerHTML += element + "<br>";
+                    });
+                }
+            }
+
+            // Function to add the missing colour
+            function addColour(colour) {
+                colours.push(colour);
+            }
+        </script>
+    </body>
+</html>
