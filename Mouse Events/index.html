@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mouse Events</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .center {
+                height: fit-content;
+                width: fit-content;
+                margin: auto;
+            }
+
+            #div-mouse-over-text-change {
+                margin-top: 100px;
+                padding: 50px;
+                border: 2px grey solid;
+                border-radius: 10%;
+            }
+
+            #div-bg-color {
+                margin-top: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Change the text of a button during mouse-over -->
+        <div id="div-mouse-over-text-change" class="center">
+            <input type="button" id="btn-change-text" onmouseover="changeText()" value="Initial Text">
+        </div>
+
+        <!-- Colour of the div which has mouse-over should be applied to the background -->
+        <div id="div-bg-color" class="center">
+            <div id="div-top" style="height: 100px; width: 100px; background-color: red;" onmouseover="changeBgColor(this)"></div>
+            <div id="div-bottom" style="height: 100px; width: 100px; background-color: blue;" onmouseover="changeBgColor(this)"></div>
+        </div>
+
+
+        <script>
+            // Button text change on mouse-over
+            function changeText() {
+                var button = document.getElementById("btn-change-text");
+                button.value = "Final Text";
+            }
+
+            // To change the background colour on mouse-over
+            function changeBgColor(element) {
+                document.body.style.backgroundColor = element.style.backgroundColor;
+                element.addEventListener("mouseout", function() {
+                    document.body.style.backgroundColor = "white";
+                });
+            }
+        </script>    
+    </body>
+</html>
